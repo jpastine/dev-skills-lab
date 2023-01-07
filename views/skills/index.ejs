@@ -9,7 +9,7 @@
 <body>
   <hi>Skills</hi>
   <ul>
-    <%= skills.forEach(todo => { %>
+    <% skills.forEach(skill => { %>
       <li>
         <%= skill.text %>
         - 
@@ -17,5 +17,6 @@
       </li>
     <% }) %> 
   </ul>
+  <a href="/skills/new">Add New Skill</a>
 </body>
 </html>
